@@ -2687,6 +2687,42 @@ input, select, textarea {
 				margin-bottom: 0;
 			}
 
+/* Adventures */
+
+.adventures article {
+	border-top: solid 3px #f4f4f4;
+	margin-bottom: 2.25em;
+	padding-top: 2.25em;
+}
+
+	.adventures article:first-child {
+		border-top: 0;
+		padding-top: 0;
+	}
+
+	.adventures article .image {
+		display: inline-block;
+		padding-left: 2.5em;
+		vertical-align: middle;
+		width: 48%;
+	}
+
+		.adventures article .image img {
+			display: block;
+			width: 100%;
+		}
+
+	.adventures article .inner {
+		display: inline-block;
+		vertical-align: middle;
+		text-align: right;
+		width: 50%;
+	}
+
+		.adventures article .inner > :last-child {
+			margin-bottom: 0;
+		}
+
 /* Header */
 
 	#header {
@@ -3175,6 +3211,20 @@ input, select, textarea {
 				display: block;
 				width: 100%;
 			}
+
+		/* Adventures */
+
+		.adventures article .image {
+			display: block;
+			margin: 0 0 2.25em 0;
+			padding-right: 0;
+			width: 100%;
+		}
+
+		.adventures article .inner {
+			display: block;
+			width: 100%;
+		}
 
 		/* Header */
 

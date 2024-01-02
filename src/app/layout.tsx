@@ -6,7 +6,7 @@ import Navbar from '../components/navbar'
 const montserrat = Montserrat({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Victor Levesque Portfolio',
+  title: 'Victor Levesque | Software Engineer',
   description: 'this is web portfolio of Victor Levesque software engineer',
 }
 

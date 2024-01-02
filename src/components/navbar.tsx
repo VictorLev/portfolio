@@ -4,13 +4,13 @@ import Container from "./ui/container";
 const Navbar = () => {
 
     return (
-      <div className="fixed mx-auto border-b bg-white shadow-md w-full">
+      <div className="fixed mx-auto border-b bg-white shadow-md w-full h-20 items-center">
       <Container>
-          <div className="relative font-bold flex justify-between h-16 text-black text-sm lg:text-lg">
-            <div className="relative px-4 text-2xl flex justify-start items-center   ">
-              &lt;VL /&gt;
+          <div className="relative font-bold flex justify-between  text-black text-sm lg:text-lg ">
+            <div className="relative font-mono px-4 text-4xl flex justify-start items-center font-[900] ">
+              &lt;VL/&gt;
             </div>
-            <div className="relative font-bold px-4 sm:px-6 lg:px-8 flex h-16 justify-end items-center text-sm lg:text-lg ">
+            <div className="relative font-bold px-4 sm:px-6 lg:px-8 flex justify-end items-center text-sm lg:text-lg ">
                 <Link href="/" className="ml-4 gap-x-2 ">
                   home
                 </Link>

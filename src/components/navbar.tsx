@@ -4,32 +4,30 @@ import Container from "./ui/container";
 const Navbar = () => {
 
     return (
-      <div className="fixed mx-auto border-b bg-white shadow-md w-full h-20 items-center">
-      <Container>
-          <div className="relative font-bold flex justify-between  text-black text-sm lg:text-lg ">
-            <div className="relative font-mono px-4 text-4xl flex justify-start items-center font-[900] ">
-              &lt;VL/&gt;
-            </div>
-            <div className="relative font-bold px-4 sm:px-6 lg:px-8 flex justify-end items-center text-sm lg:text-lg ">
-                <Link href="/" className="ml-4 gap-x-2 ">
-                  home
-                </Link>
-                <Link href="/" className="ml-4 gap-x-2 ">
-                  work
-                </Link>
-                <Link href="/" className="ml-4 gap-x-2 ">
-                  about
-                </Link>
-                <Link href="/" className="ml-4 gap-x-2 ">
-                  blog
-                </Link>
-                <Link href="/" className="ml-4 gap-x-2 ">
-                  Get in touch
-                </Link>
-            </div>
+      <nav className="z-10 fixed mx-auto border-b bg-[#3a353F] shadow-md w-full">
+        <div className="relative font-bold flex justify-between h-[4rem] items-center text-white text-sm lg:text-lg mx-8 ">
+          <div className="relative font-mono px-4 text-5xl flex justify-start items-center font-black ">
+            &lt;VL/&gt;
           </div>
-      </Container>
-  </div>
+          <div className="relative transition cursor-pointer font-bold px-4 gap-x-4 sm:px-6 lg:px-8 flex justify-end items-center text-sm lg:text-lg ">
+            <a href="#home" >
+              Home
+            </a>
+            <a href="/" >
+              work
+            </a>
+            <a href="#about">
+              about
+            </a>
+            <a href="/" >
+              blog
+            </a>
+            <a href="/">
+              Get in touch
+            </a>
+          </div>
+        </div>
+  </nav>
     );
 }
 

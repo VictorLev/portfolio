@@ -5,16 +5,16 @@ import { IconBrandLinkedin, IconBrandGithub } from '@tabler/icons-react';
 
 const Welcome = () => {
   return (
-    <section id='home' className="bg-gradient-to-b from-[#F1ECE1] to-white h-screen">
+    <section id='home' className="h-screen">
       <Container>
-        <div className="relative flex flex-col h-[42rem] align-center justify-center items-center">
+        <div className="relative flex  flex-col h-[42rem] align-center justify-center items-center">
           <div className="relative flex gap-x-32 justify-center items-center">
             <div className="relative flex flex-col max-w-4xl">
               <div className="block text-[#3a353F] font-bold text-6xl my-4 leading-tight">
                 Software engineer
               </div>
               <div className="pr-8 text-lg text-[#797b82] font-medium">
-                Hi, I&apos;m Victor Levesque. Electrical Engineer by training and Software Engineer by passion, based in Melbourne 🇦🇺
+                Hi, I&apos;m Victor Levesque. An Electrical Engineer by training and Software Engineer by passion based in Melbourne. 🇦🇺
               </div>
               <div className="flex mx-4 my-8 gap-4">
                 <a href="https://www.linkedin.com/in/victor-l%C3%A9vesque-p-eng/" target="_blank" rel="noreferrer noopener">

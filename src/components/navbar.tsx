@@ -9,21 +9,21 @@ const Navbar = () => {
           <div className="relative font-mono px-4 text-5xl flex justify-start items-center font-black ">
             &lt;VL/&gt;
           </div>
-          <div className="relative transition cursor-pointer font-bold px-4 gap-x-4 sm:px-6 lg:px-8 flex justify-end items-center text-sm lg:text-lg ">
+          <div className="relative flex cursor-pointer font-bold gap-8 justify-end items-center text-sm lg:text-md ">
             <a href="#home" >
               Home
             </a>
-            <a href="/" >
-              work
+            <a href="#projects">
+              Projects
+            </a>
+            <a href="#experience">
+              Experience
             </a>
             <a href="#about">
-              about
+              Personal Interests
             </a>
-            <a href="/" >
-              blog
-            </a>
-            <a href="/">
-              Get in touch
+            <a href="#">
+              Get in Touch Button
             </a>
           </div>
         </div>

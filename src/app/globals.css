@@ -3,26 +3,12 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 255, 255, 255;
-  --background-end-rgb: 255, 255, 255;
-
   --dark: #3a353F;
   --dark-blue: #505668;
   --cream: #F1ECE1;
   --orange: #C05850;
   --salmon: #E2AB7F;
-
-}
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  scroll-behavior: smooth;
 }
 
 .blob {
@@ -42,4 +28,27 @@ body {
   100% {
     border-radius: 40% 60%;
   }
+}
+
+
+.scroll {
+	bottom: -1210px;
+	width: 100%;
+	height: auto;
+	z-index: 0;
+  margin:0;
+  padding:0;
+	-webkit-transition: top 11s;
+	-moz-transition: top 11s;
+	-ms-transition: top 11s;
+	-o-transition: top 11s;
+	transition: bottom 11s;
+}
+.scroll:hover a {
+  bottom: 0;
+  -webkit-transition: all 11s;
+  -moz-transition: all 11s;
+  -ms-transition: all 11s;
+  -o-transition: all 11s;
+  transition: all 11s;
 }

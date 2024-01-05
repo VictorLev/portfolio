@@ -13,8 +13,8 @@ export default function Home() {
     <ScrollSpy
       scrollThrottle={100}
       useBoxMethod
-      offsetBottom={20}
-      offsetTop={20}
+      offsetBottom={50}
+      offsetTop={50}
     >
       <Welcome id={"home"}/>
       <Projects id={"projects"}/>

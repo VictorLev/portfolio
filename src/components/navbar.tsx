@@ -1,5 +1,4 @@
-import Link from "next/link";
-import Container from "./ui/container";
+"use client"
 
 const Navbar = () => {
 
@@ -9,18 +8,18 @@ const Navbar = () => {
           <div className="relative font-mono px-4 text-5xl flex justify-start items-center font-black ">
             &lt;VL/&gt;
           </div>
-          <div className="relative flex cursor-pointer font-bold gap-8 justify-end items-center text-sm lg:text-md ">
-            <a href="#home" >
-              Home
+          <div className="relative flex cursor-pointer gap-8 justify-end items-center text-sm lg:text-md">
+            <a href="#home" className="hover:text-[#e89e99] transition-all">
+              <div data-to-scrollspy-id="home" className="font-bold">Home</div>
             </a>
-            <a href="#projects">
-              Projects
+            <a href="#projects" className="hover:text-[#e89e99] transition-all">
+              <div data-to-scrollspy-id="projects" className="font-bold">Projects</div>
             </a>
-            <a href="#experience">
-              Experience
+            <a href="#experience" className="hover:text-[#e89e99]  transition-all">
+              <div data-to-scrollspy-id="experience" className="font-bold">Experience</div>
             </a>
-            <a href="#about">
-              Personal Interests
+            <a href="#interests" className="hover:text-[#e89e99] transition-all">
+              <div data-to-scrollspy-id="interests" className="font-bold">Interests</div>
             </a>
             <a href="#">
               Get in Touch Button

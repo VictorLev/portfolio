@@ -1,20 +1,26 @@
+"use client"
 
-
-import Image from 'next/image'
-import config from 'tailwindcss'
-import Photo from '../photo_profile.png'
-import ProfileImage from '../../components/profile-image'
 import Welcome from '@/components/Welcome-message'
-import About from '@/components/about'
+import Experience from '@/components/experience'
+import Interests from '@/components/interests';
 import Projects from '@/components/projects'
+import ScrollSpy from "react-ui-scrollspy";
 
 
 export default function Home() {
   return (
     <div className="bg-[#F1ECE1] ">
-      <Welcome/>
-      <About />
-      <Projects />
+    <ScrollSpy
+      scrollThrottle={100}
+      useBoxMethod
+      offsetBottom={20}
+      offsetTop={20}
+    >
+      <Welcome id={"home"}/>
+      <Projects id={"projects"}/>
+      <Experience id={"experience"}/>
+      <Interests id={"interests"}/>
+    </ScrollSpy >
     </div>
   )
 }

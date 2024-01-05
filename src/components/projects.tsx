@@ -1,53 +1,124 @@
 import Image from "next/image";
 import Container from "./ui/container";
 import qcstore from "../../public/qcecomm-store.jpg"
-import { IconBrandGithub,IconBrandNextjs,IconBrandPrisma } from '@tabler/icons-react';
+import { IconBrandGithub,IconBrandNextjs,IconBrandPrisma,IconExternalLink } from '@tabler/icons-react';
 
-const Projects = () => {
+interface ProjectsProps {
+  id: string;
+}
+
+const Projects = ({id}:ProjectsProps) => {
   return (
-    <section id="projects" className=" py-24">
+    <div id={id} className=" py-24 ">
       <Container>
         <div className="w-full px-12 justify-center items-center gap-8">
           <div className="flex flex-col">
-            <div className="font-bold text-[#C05850] border-b-2 border-[#505668]">
-              PORTFOLIO
+            <div className="font-bold text-[#C05850] text-2xl border-b-2 border-[#505668]">
+              PORTFOLIO PROJECTS
             </div>
-            <div className="font-bold text-2xl py-8 text-[#3a353F]">
+            <div className="font-bold text-2xl pt-2 pb-8 text-[#3a353F]">
               Each project is a unique piece of development
             </div>
+            { /* -- PORTFOLIO PROJECTS --*/ }
             <div className="grid grid-cols-1 gap-20 w-full ">
+              { /* -- E-COMM STORE --*/ }
               <div className="flex flex-row p-6 h-[25rem] gap-20 overflow-hidden rounded-2xl shadow-lg bg-gradient-to-b from-white to-[#f1e7de] ">
-                <div className="overflow-hidden rounded-2xl shadow-lg w-7/12 h-full transition duration-[2000ms] hover:translate-y-[-53%]" >
+                <div className="overflow-hidden rounded-2xl shadow-lg h-full " >
                   <a target="_blank" href="https://qcecomm-store.vercel.app/en" rel="noreferrer">
                       <Image
                         src={qcstore}
                         alt="website"
-
+                        width={500}
+                        className="transition duration-[5000ms] hover:translate-y-[-50%]"
                       />
                   </a>
                 </div>
                 <div className="flex flex-col h-full justify-center items-center w-[18rem]">
                   <div className="font-bold text-lg text-[#3a353F] mb-4">E-commerce (Decembre 2023)</div>
-                  <div className="text-[#797b82] font-medium text-center mb-2">A seamless online shopping experience for customers Quebecers in Australia offering a wide range of products. The full-stack website supports multiple languages, a shopping cart, Stripe and more.</div>
-                  <div className="flex flex-row gap-2 justify-center">
-                    <IconBrandNextjs color="#3a353F" size={36}/>
-                    <IconBrandPrisma color="#3a353F" size={36}/>
+                  <div className="text-[#797b82] font-medium text-center mb-2">A seamless online shopping experience for Quebecer customers in Australia offering a wide range of products. The full-stack website supports multiple languages, a shopping cart, Stripe and more.</div>
+                  <div className="flex flex-row gap-4 justify-center">
+                    <div className="flex flex-row p-2 items-center">
+                      <div className="font-semibold text-[#3a353F]">Nextjs</div>
+                      <IconBrandNextjs color="#3a353F" size={24}/>
+                    </div>
+                    <div className="flex flex-row items-center">
+                      <div className="font-semibold text-[#3a353F]">Prisma</div>
+                      <IconBrandPrisma color="#3a353F" size={24}/>
+                    </div>
                   </div>
-                  <div className="flex justify-evenly">
-                    <a target="_blank" href="https://github.com/stefvndev/car-rental" rel="noreferrer">
-                      Code
-                    </a>
-                    <a target="_blank" href="https://car-rental-ten.vercel.app/" rel="noreferrer">
-                      Live Demo
-                    </a>
+                  <div className="flex justify-between w-full mt-4 p-2 items-center">
+                    <a className="text-[#3a353F] hover:text-[#e89e99] transition-all" target="_blank" href="https://github.com/VictorLev/qcecomm-store" rel="noreferrer">
+                        <div className="flex flex-row items-center rounded bg-white shadow p-1">
+                          <div className="font-semibold px-1">
+                            Code
+                          </div>
+                          <IconBrandGithub size={36}/>
+                        </div>
+                      </a>
+
+                    <a className="text-[#3a353F] hover:text-[#e89e99] transition-all" target="_blank" href="https://qcecomm-store.vercel.app/en" rel="noreferrer">
+                        <div className="flex flex-row items-center rounded bg-white shadow p-1">
+                          <div className="font-semibold px-1">
+                          Live Demo
+                          </div>
+                          <IconExternalLink  size={36}/>
+                        </div>
+                      </a>
                   </div>
                 </div>
+              </div>
+              { /* -- AirBNB Clone --*/ }
+              <div className="flex flex-row-reverse p-6 h-[25rem] gap-20 overflow-hidden rounded-2xl shadow-lg bg-gradient-to-b from-white to-[#f1e7de] ">
+                <div className="overflow-hidden rounded-2xl shadow-lg h-full " >
+                  <a target="_blank" href="https://qcecomm-store.vercel.app/en" rel="noreferrer">
+                      <Image
+                        src={qcstore}
+                        alt="website"
+                        width={500}
+                        className="transition duration-[5000ms] hover:translate-y-[-50%]"
+                      />
+                  </a>
+                </div>
+                <div className="flex flex-col h-full justify-center items-center w-[18rem]">
+                  <div className="font-bold text-lg text-[#3a353F] mb-4">AirBNB Clone (Decembre 2023)</div>
+                  <div className="text-[#797b82] font-medium text-center mb-2">A seamless online shopping experience for Quebecers customers in Australia offering a wide range of products. The full-stack website supports multiple languages, a shopping cart, Stripe and more.</div>
+                  <div className="flex flex-row gap-4 justify-center">
+                    <div className="flex flex-row p-2 items-center">
+                      <div className="font-semibold text-[#3a353F]">Nextjs</div>
+                      <IconBrandNextjs color="#3a353F" size={24}/>
+                    </div>
+                    <div className="flex flex-row items-center">
+                      <div className="font-semibold text-[#3a353F]">Prisma</div>
+                      <IconBrandPrisma color="#3a353F" size={24}/>
+                    </div>
+                  </div>
+                  <div className="flex justify-between w-full mt-4 p-2 items-center">
+                    <a target="_blank" href="" rel="noreferrer">
+                        <div className="flex flex-row items-center rounded bg-white shadow p-1">
+                          <div className="font-semibold text-[#3a353F] px-1">
+                            Code
+                          </div>
+                          <IconBrandGithub color="#3a353F" size={36}/>
+                        </div>
+                      </a>
+
+                    <a target="_blank" href="" rel="noreferrer">
+                        <div className="flex flex-row items-center rounded bg-white shadow p-1">
+                          <div className="font-semibold text-[#3a353F] px-1">
+                          Live Demo
+                          </div>
+                          <IconExternalLink color="#3a353F" size={36}/>
+                        </div>
+                      </a>
+                  </div>
+                </div>
+
               </div>
             </div>
           </div>
         </div>
       </Container>
-    </section>
+    </div>
   );
 }
 

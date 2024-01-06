@@ -1,6 +1,6 @@
 "use client"
 
-import Welcome from '@/components/Welcome-message'
+import Welcome from '@/components/home'
 import Experience from '@/components/experience'
 import Interests from '@/components/interests';
 import Projects from '@/components/projects'

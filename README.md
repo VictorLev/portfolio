@@ -1,4 +1,4 @@
-### Victor Lev's Portfolio
+# Victor Lev's Portfolio
 
 Welcome to Victor Levesque's portfolio repository! This repository contains the source code for my portfolio website, showcasing his skills, projects, and achievements. You can explore the code and use it as a reference for your portfolio.
 

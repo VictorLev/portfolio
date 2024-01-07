@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import { Montserrat } from 'next/font/google'
 import './globals.css'
 import Navbar from '../components/navbar'
+import ArticleProvider from '@/providers/article-provider'
 
 const montserrat = Montserrat({ subsets: ['latin'] })
 
@@ -19,6 +20,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={montserrat.className}>
         <div id="root">
+          <ArticleProvider />
           <Navbar />
           {children}
         </div>

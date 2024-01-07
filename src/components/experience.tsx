@@ -4,12 +4,27 @@ import wgtunnel from "../../public/westgatetunnel.webp"
 import pokaint from "../../public/Integrations-Logos.webp"
 import ppplant from "../../public/ppplant.webp"
 import { IconBrandGithub,IconBrandNextjs,IconBrandPrisma,IconExternalLink } from '@tabler/icons-react';
+import { MouseEventHandler } from "react";
+import useViewArticle from "@/hooks/view-article";
+import { Dialog, Transition } from "@headlessui/react";
+import { IconX } from "@tabler/icons-react";
+import { Fragment } from 'react'
+import About from "./about";
 
 interface ExperienceProps {
   id: string;
 }
 
 const Experience = ({id}:ExperienceProps) => {
+
+  const viewArticle = useViewArticle()
+  const onPreview: MouseEventHandler<HTMLDivElement> = (event) => {
+    event.stopPropagation()
+
+    viewArticle.onOpen("DATA FROM onOpen")
+  }
+
+
   return (
     <div id={id} className=" py-24 bg-white">
       <Container>
@@ -39,9 +54,9 @@ const Experience = ({id}:ExperienceProps) => {
                   As part of the Intelligent Transport Systems team, I played a role in designing, configuring, and testing the radio, public address, operator and emergency telephone systems.
                   </div>
                   <div className="flex flex-row  my-2">
-                    <a className="text-[#3a353F] font-semibold underline-offset-4 transition-all decoration-[#C05850] hover:underline" target="_blank" href="" rel="noreferrer">
+                    <div className="text-[#3a353F] font-semibold underline-offset-4 transition-all decoration-[#C05850] hover:underline" onClick={onPreview}>
                       Read more
-                    </a>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -93,6 +108,7 @@ const Experience = ({id}:ExperienceProps) => {
           </div>
         </div>
       </Container>
+
   </div>
    );
 }

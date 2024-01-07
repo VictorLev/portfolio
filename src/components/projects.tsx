@@ -96,12 +96,12 @@ const Projects = ({id}:ProjectsProps) => {
                     </div>
                   </div>
                   <div className="flex justify-center w-full mt-4 p-2 items-center">
-                    <a target="_blank" href="https://github.com/VictorLev/portfolio" rel="noreferrer">
+                    <a className="text-[#3a353F] hover:text-[#e89e99] transition-all" target="_blank" href="https://github.com/VictorLev/portfolio" rel="noreferrer">
                         <div className="flex flex-row items-center rounded bg-white shadow p-1">
-                          <div className="font-semibold text-[#3a353F] px-1">
+                          <div className="font-semibold px-1">
                             Code
                           </div>
-                          <IconBrandGithub color="#3a353F" size={36}/>
+                          <IconBrandGithub size={36}/>
                         </div>
                       </a>
                   </div>

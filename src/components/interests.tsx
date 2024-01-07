@@ -16,7 +16,7 @@ const Interests = ({id}:InterestsProps) => {
               PERSONAL INTERESTS
             </div>
             <div className="font-bold text-2xl pt-2 pb-8 text-[#3a353F]">
-              Each project is a unique piece of development
+              Life changing experiences that I&apos;m proud to share
             </div>
 
           </div>

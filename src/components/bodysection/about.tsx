@@ -1,6 +1,6 @@
 import Image from "next/image";
-import Container from "../ui/container";
-import laptop from '@/../public/laptop.jpg'
+import Container from "@/components/ui/container";
+import laptop from '@/public/laptop.jpg'
 
 
 
@@ -14,6 +14,7 @@ const About = () => {
               src={laptop}
               alt="Picture of laptop"
               fill
+              style={{objectFit: "cover"}}
               sizes="(max-width:768px) 100vw , 700px"
             />
           </div>

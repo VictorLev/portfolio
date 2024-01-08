@@ -1,8 +1,8 @@
 import Image from "next/image";
-import Container from "../ui/container";
-import qcstore from "@/../public/qcecomm-store.jpg"
-import portfolio from "@/../public/portfolio.png"
-import wip from "@/../public/WIP.jpeg"
+import Container from "@/components/ui/container";
+import qcstore from "@/public/qcecomm-store.jpg"
+import portfolio from "@/public/portfolio.png"
+import wip from "@/public/WIP.jpeg"
 import { IconBrandGithub,IconBrandNextjs,IconBrandPrisma,IconExternalLink,
   IconBrandTailwind, IconBrandReact } from '@tabler/icons-react';
 
@@ -115,8 +115,8 @@ const Projects = ({id}:ProjectsProps) => {
                       <Image
                         src={wip}
                         alt="wip"
-                        layout="fill"
-                        objectFit="cover"
+                        fill
+                        style={{objectFit: "cover"}}
                       />
                   </a>
                 </div>

@@ -1,16 +1,18 @@
 import Image from "next/image";
-import Container from "../ui/container";
-import wgtunnel from "@/../public/westgatetunnel.webp"
-import pokaint from "@/../public/Integrations-Logos.webp"
-import ppplant from "@/../public/ppplant.webp"
+import Container from "@/components/ui/container";
+import wgtunnel from "@/public/westgatetunnel.webp"
+import pokaint from "@/public/Integrations-Logos.webp"
+import ppplant from "@/public/ppplant.webp"
 import { IconBrandGithub,IconBrandNextjs,IconBrandPrisma,IconExternalLink } from '@tabler/icons-react';
 import { MouseEventHandler } from "react";
 import useViewArticle from "@/hooks/view-article";
 import { Dialog, Transition } from "@headlessui/react";
 import { IconX } from "@tabler/icons-react";
 import { Fragment } from 'react'
-import About from "./about";
-import WgtArticle from "../articles/wgtarticle";
+import About from "@/components/bodysection/about";
+import WgtArticle from "@/components/articles/wgtarticle";
+import PokaArticle from "../articles/pokaarticle";
+import HArticle from "../articles/hatcharticle";
 
 interface ExperienceProps {
   id: string;
@@ -71,8 +73,8 @@ const Experience = ({id}:ExperienceProps) => {
                   <Image
                     src={pokaint}
                     alt="website"
-                    layout="fill"
-                    objectFit="cover"
+                    fill
+                    style={{objectFit: "cover"}}
                   />
                 </div>
                 <div className="flex flex-col">
@@ -81,7 +83,7 @@ const Experience = ({id}:ExperienceProps) => {
                     Being the only Solutions engineer in fast growing startup, I lead integration projects between Poka, a connect worker application, and various 3rd parties like SAP, PowerBI, Upkeep and more.
                   </div>
                   <div className="flex flex-row  my-2">
-                  <div className="cursor-pointer text-[#3a353F] font-semibold underline-offset-4 transition-all decoration-[#C05850] hover:underline" onClick={(event) => handleStatus(onPreview, <><About /><About /><About /><About /></>)}>
+                  <div className="cursor-pointer text-[#3a353F] font-semibold underline-offset-4 transition-all decoration-[#C05850] hover:underline" onClick={(event) => handleStatus(onPreview, <PokaArticle />)}>
                       Read more
                     </div>
                   </div>
@@ -93,8 +95,8 @@ const Experience = ({id}:ExperienceProps) => {
                   <Image
                     src={ppplant}
                     alt="website"
-                    layout="fill"
-                    objectFit="cover"
+                    fill
+                    style={{objectFit: "cover"}}
                   />
                 </div>
                 <div className="flex flex-col">
@@ -103,7 +105,7 @@ const Experience = ({id}:ExperienceProps) => {
                   Participating in the design of an extensive, robust network infrastructure, I coordinated with clients and stakeholders to confirm project requirements and redacted detailed technical specifications and drawings for network and device installation.
                   </div>
                   <div className="flex flex-row  my-2">
-                    <div className="cursor-pointer text-[#3a353F] font-semibold underline-offset-4 transition-all decoration-[#C05850] hover:underline" onClick={(event) => handleStatus(onPreview, <><About /><About /><About /><About /></>)}>
+                    <div className="cursor-pointer text-[#3a353F] font-semibold underline-offset-4 transition-all decoration-[#C05850] hover:underline" onClick={(event) => handleStatus(onPreview, <HArticle/>)}>
                       Read more
                     </div>
                   </div>

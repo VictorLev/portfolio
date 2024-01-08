@@ -17,7 +17,7 @@
 	border-radius: 40% 60% 60% 40% / 70% 30% 70% 30%;
   width: 20rem;
   height: 20rem;
-  background-image: url("../../public/photo_profile.jpeg");
+  background-image: url("../public/photo_profile.jpeg");
   background-size: cover;
   box-shadow: -10vmin 10vmin 0 rgba(255,255,255,0.07);
 	animation: morph 10s linear infinite alternate;

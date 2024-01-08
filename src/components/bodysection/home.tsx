@@ -1,8 +1,8 @@
 import Link from "next/link";
-import ProfileImage from "../ui/profile-image";
-import Container from "../ui/container";
+import ProfileImage from "@/components/profile-image";
+import Container from "@/components/ui/container";
 import { IconBrandLinkedin, IconBrandGithub } from '@tabler/icons-react';
-import About from "./about";
+import About from "@/components/bodysection/about";
 
 interface WelcomeProps {
   id: string;
@@ -12,8 +12,8 @@ const Welcome = ({
   id
 }:WelcomeProps) => {
   return (
-    <div id={id} className="">
-      <div className="h-screen">
+    <div id={id}>
+      <div className="flex items-center h-screen ">
         <Container>
           <div className="relative flex  flex-col h-[42rem] align-center justify-center items-center">
             <div className="relative flex gap-x-32 justify-center items-center">

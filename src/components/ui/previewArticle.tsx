@@ -1,9 +1,7 @@
 "use client";
 
 import useViewArticle from "@/hooks/view-article";
-import Article from "./article";
-import About from "../bodysection/about";
-
+import Article from "@/components/ui/article";
 
 const PreviewArticle = () => {
   const previewArticle = useViewArticle();

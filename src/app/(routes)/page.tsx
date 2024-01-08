@@ -1,9 +1,9 @@
 "use client"
 
-import Welcome from '@/components/home'
-import Experience from '@/components/experience'
-import Interests from '@/components/interests';
-import Projects from '@/components/projects'
+import Welcome from '@/components/bodysection/home'
+import Experience from '@/components/bodysection/experience'
+import Interests from '@/components/bodysection/interests';
+import Projects from '@/components/bodysection/projects'
 import ScrollSpy from "react-ui-scrollspy";
 
 

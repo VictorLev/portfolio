@@ -1,6 +1,6 @@
-import Image from "next/image";
-import Container from "./ui/container";
-import { IconBrandGithub,IconBrandNextjs,IconBrandPrisma,IconExternalLink } from '@tabler/icons-react';
+
+import Container from "../ui/container";
+
 
 interface InterestsProps {
   id: string;

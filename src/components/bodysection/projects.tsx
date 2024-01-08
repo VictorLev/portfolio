@@ -1,8 +1,8 @@
 import Image from "next/image";
-import Container from "./ui/container";
-import qcstore from "../../public/qcecomm-store.jpg"
-import portfolio from "../../public/portfolio.png"
-import wip from "../../public/WIP.jpeg"
+import Container from "../ui/container";
+import qcstore from "@/../public/qcecomm-store.jpg"
+import portfolio from "@/../public/portfolio.png"
+import wip from "@/../public/WIP.jpeg"
 import { IconBrandGithub,IconBrandNextjs,IconBrandPrisma,IconExternalLink,
   IconBrandTailwind, IconBrandReact } from '@tabler/icons-react';
 
@@ -25,7 +25,7 @@ const Projects = ({id}:ProjectsProps) => {
             { /* -- PORTFOLIO PROJECTS --*/ }
             <div className="grid grid-cols-1 gap-20 w-full ">
               { /* -- E-COMM STORE --*/ }
-              <div className="flex flex-row p-6 h-[25rem] gap-20 overflow-hidden rounded-2xl shadow-lg bg-gradient-to-b from-white to-[#f1e7de] ">
+              <div className="flex flex-row p-6 h-[25rem] gap-20 overflow-hidden rounded-2xl shadow-lg bg-gradient-to-b from-white to-[#fcf6f1] ">
                 <div className="overflow-hidden rounded-2xl shadow-lg h-full " >
                   <a target="_blank" href="https://qcecomm-store.vercel.app/en" rel="noreferrer">
                       <Image
@@ -71,7 +71,7 @@ const Projects = ({id}:ProjectsProps) => {
                 </div>
               </div>
               { /* -- Portfolio --*/ }
-              <div className="flex flex-row-reverse p-6 h-[25rem] gap-20 overflow-hidden rounded-2xl shadow-lg bg-gradient-to-b from-white to-[#f1e7de] ">
+              <div className="flex flex-row-reverse p-6 h-[25rem] gap-20 overflow-hidden rounded-2xl shadow-lg bg-gradient-to-b from-white to-[#fcf6f1] ">
                 <div className="overflow-hidden rounded-2xl shadow-lg h-full " >
                   <a target="_blank" href="https://qcecomm-store.vercel.app/en" rel="noreferrer">
                       <Image
@@ -109,7 +109,7 @@ const Projects = ({id}:ProjectsProps) => {
 
               </div>
               { /* -- Restaurant Search Engine --*/ }
-              <div className="flex flex-row p-6 h-[25rem] gap-20 overflow-hidden rounded-2xl shadow-lg bg-gradient-to-b from-white to-[#f1e7de] ">
+              <div className="flex flex-row p-6 h-[25rem] gap-20 overflow-hidden rounded-2xl shadow-lg bg-gradient-to-b from-white to-[#fcf6f1] ">
                 <div className="relative overflow-hidden rounded-2xl shadow-lg w-1/2 h-full" >
                   <a target="_blank" href="" rel="noreferrer">
                       <Image

@@ -1,10 +1,8 @@
 "use client"
 
-import useViewArticle from '@/hooks/view-article'
 import { Dialog, Transition } from '@headlessui/react'
 import { IconX } from '@tabler/icons-react'
 import { Fragment } from 'react'
-import About from './about'
 
 interface ArticleProps {
   open: boolean,
@@ -34,8 +32,8 @@ const Article: React.FC<ArticleProps> = ({
             >
               <Dialog.Panel className="w-full max-w-5xl overflow-hidden rounded-lg text-left align-middle">
                 <div className='relative flex w-full items-center overflow-hidden bg-white p-4 shadow-2xl'>
-                  <div className='absolute top-4 right-8'>
-                    <IconX onClick={onClose} size={15} />
+                  <div className='absolute cursor-pointer top-4 right-8'>
+                    <IconX onClick={onClose} size={20} />
                   </div>
                   {children}
                 </div>

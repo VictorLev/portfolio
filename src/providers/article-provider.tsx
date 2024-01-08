@@ -1,6 +1,6 @@
 "use client"
 
-import PreviewArticle from "@/components/previewArticle";
+import PreviewArticle from "@/components/ui/previewArticle";
 import { useEffect, useState } from "react";
 
 const ArticleProvider = () => {

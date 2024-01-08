@@ -2,16 +2,11 @@
 
 import useViewArticle from "@/hooks/view-article";
 import Article from "./article";
-import About from "./about";
+import About from "../bodysection/about";
 
 
 const PreviewArticle = () => {
   const previewArticle = useViewArticle();
-  const product = useViewArticle((state) => state.data);
-
-  if (!product) {
-    return null;
-  }
 
   return (
     <Article
@@ -19,10 +14,7 @@ const PreviewArticle = () => {
       onClose={previewArticle.onClose}
     >
       <div className="grid w-full items-start overflow-y-auto">
-        <About />
-        <About />
-        <About />
-        <About />
+        {previewArticle.data}
       </div>
     </Article>
   );

@@ -1,8 +1,8 @@
 import Image from "next/image";
-import Container from "./ui/container";
-import wgtunnel from "../../public/westgatetunnel.webp"
-import pokaint from "../../public/Integrations-Logos.webp"
-import ppplant from "../../public/ppplant.webp"
+import Container from "../ui/container";
+import wgtunnel from "@/../public/westgatetunnel.webp"
+import pokaint from "@/../public/Integrations-Logos.webp"
+import ppplant from "@/../public/ppplant.webp"
 import { IconBrandGithub,IconBrandNextjs,IconBrandPrisma,IconExternalLink } from '@tabler/icons-react';
 import { MouseEventHandler } from "react";
 import useViewArticle from "@/hooks/view-article";
@@ -10,6 +10,7 @@ import { Dialog, Transition } from "@headlessui/react";
 import { IconX } from "@tabler/icons-react";
 import { Fragment } from 'react'
 import About from "./about";
+import WgtArticle from "../articles/wgtarticle";
 
 interface ExperienceProps {
   id: string;
@@ -18,10 +19,14 @@ interface ExperienceProps {
 const Experience = ({id}:ExperienceProps) => {
 
   const viewArticle = useViewArticle()
+
+  const handleStatus = (event: MouseEventHandler<HTMLDivElement>, article: React.ReactNode) => {
+    event
+    viewArticle.onOpen(article)
+  }
+
   const onPreview: MouseEventHandler<HTMLDivElement> = (event) => {
     event.stopPropagation()
-
-    viewArticle.onOpen("DATA FROM onOpen")
   }
 
 
@@ -54,7 +59,7 @@ const Experience = ({id}:ExperienceProps) => {
                   As part of the Intelligent Transport Systems team, I played a role in designing, configuring, and testing the radio, public address, operator and emergency telephone systems.
                   </div>
                   <div className="flex flex-row  my-2">
-                    <div className="text-[#3a353F] font-semibold underline-offset-4 transition-all decoration-[#C05850] hover:underline" onClick={onPreview}>
+                    <div className="cursor-pointer text-[#3a353F] font-semibold underline-offset-4 transition-all decoration-[#C05850] hover:underline" onClick={(event) => handleStatus(onPreview, <WgtArticle/>)}>
                       Read more
                     </div>
                   </div>
@@ -76,9 +81,9 @@ const Experience = ({id}:ExperienceProps) => {
                     Being the only Solutions engineer in fast growing startup, I lead integration projects between Poka, a connect worker application, and various 3rd parties like SAP, PowerBI, Upkeep and more.
                   </div>
                   <div className="flex flex-row  my-2">
-                    <a className="text-[#3a353F] font-semibold underline-offset-4 transition-all decoration-[#C05850] hover:underline" target="_blank" href="" rel="noreferrer">
+                  <div className="cursor-pointer text-[#3a353F] font-semibold underline-offset-4 transition-all decoration-[#C05850] hover:underline" onClick={(event) => handleStatus(onPreview, <><About /><About /><About /><About /></>)}>
                       Read more
-                    </a>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -98,9 +103,9 @@ const Experience = ({id}:ExperienceProps) => {
                   Participating in the design of an extensive, robust network infrastructure, I coordinated with clients and stakeholders to confirm project requirements and redacted detailed technical specifications and drawings for network and device installation.
                   </div>
                   <div className="flex flex-row  my-2">
-                    <a className="text-[#3a353F] font-semibold underline-offset-4 transition-all decoration-[#C05850] hover:underline" target="_blank" href="" rel="noreferrer">
+                    <div className="cursor-pointer text-[#3a353F] font-semibold underline-offset-4 transition-all decoration-[#C05850] hover:underline" onClick={(event) => handleStatus(onPreview, <><About /><About /><About /><About /></>)}>
                       Read more
-                    </a>
+                    </div>
                   </div>
                 </div>
               </div>

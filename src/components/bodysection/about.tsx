@@ -1,6 +1,6 @@
 import Image from "next/image";
-import Container from "./ui/container";
-import laptop from '../../public/laptop.jpg'
+import Container from "../ui/container";
+import laptop from '@/../public/laptop.jpg'
 
 
 

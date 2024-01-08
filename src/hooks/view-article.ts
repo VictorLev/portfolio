@@ -1,16 +1,17 @@
+import React from "react";
 import { create } from "zustand"
 
 interface ViewArticleProps {
   isOpen : boolean
-  data?: string
-  onOpen : (data:string) => void;
+  data?: React.ReactNode
+  onOpen : (data:React.ReactNode) => void;
   onClose : () => void;
 }
 
 const useViewArticle = create<ViewArticleProps>((set) => ({
   isOpen: false,
-  data: undefined,
-  onOpen: (data: string) => set({data: data, isOpen: true}),
+  children: undefined,
+  onOpen: (data:React.ReactNode) => set({data, isOpen: true}),
   onClose: () => set( {isOpen:false} )
 }))
 

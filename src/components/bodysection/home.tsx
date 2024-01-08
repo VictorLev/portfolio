@@ -1,6 +1,6 @@
 import Link from "next/link";
-import ProfileImage from "./profile-image";
-import Container from "./ui/container";
+import ProfileImage from "../ui/profile-image";
+import Container from "../ui/container";
 import { IconBrandLinkedin, IconBrandGithub } from '@tabler/icons-react';
 import About from "./about";
 
@@ -25,11 +25,11 @@ const Welcome = ({
                   Hi, I&apos;m Victor Levesque. An Electronic Engineer by training and Software Engineer by passion based in Melbourne. 🇦🇺
                 </div>
                 <div className="flex mx-4 my-8 gap-4">
-                  <a href="https://www.linkedin.com/in/victor-l%C3%A9vesque-p-eng/" target="_blank" rel="noreferrer noopener">
-                    <IconBrandLinkedin color="#3a353F" size={36}/>
+                  <a className="text-[#3a353F] hover:text-[#e89e99] transition-all" href="https://www.linkedin.com/in/victor-l%C3%A9vesque-p-eng/" target="_blank" rel="noreferrer noopener">
+                    <IconBrandLinkedin size={36}/>
                   </a>
-                  <a href="https://github.com/VictorLev" target="_blank" rel="noreferrer noopener">
-                    <IconBrandGithub color="#3a353F" size={36}/>
+                  <a className="text-[#3a353F] hover:text-[#e89e99] transition-all" href="https://github.com/VictorLev" target="_blank" rel="noreferrer noopener">
+                    <IconBrandGithub size={36}/>
                   </a>
                 </div>
               </div>

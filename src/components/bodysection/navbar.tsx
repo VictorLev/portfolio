@@ -1,5 +1,7 @@
 "use client"
 
+import { IconMail } from "@tabler/icons-react";
+
 const Navbar = () => {
 
     return (
@@ -15,14 +17,17 @@ const Navbar = () => {
             <a href="#projects" className="hover:text-[#e89e99] transition-all">
               <div data-to-scrollspy-id="projects" className="font-bold">Projects</div>
             </a>
-            <a href="#experience" className="hover:text-[#e89e99]  transition-all">
+            <a href="#experience" className="hover:text-[#e89e99] transition-all">
               <div data-to-scrollspy-id="experience" className="font-bold">Experience</div>
             </a>
             <a href="#interests" className="hover:text-[#e89e99] transition-all">
               <div data-to-scrollspy-id="interests" className="font-bold">Interests</div>
             </a>
-            <a href="#">
-              Get in Touch Button
+            <a href="#" className="bg-[#C05850] rounded-3xl p-2">
+              <div className="flex flex-row items-center justify-center hover:text-[#e89e99] gap-1">
+                <IconMail size={25}/>
+                Get in Touch
+              </div>
             </a>
           </div>
         </div>

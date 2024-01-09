@@ -1,66 +1,38 @@
-import { Dialog, Popover, Transition } from '@headlessui/react'
-import { Fragment, useState } from 'react'
+import { Popover, Transition } from '@headlessui/react'
+import { useState } from 'react'
 
-interface PopoverBoxProps {
-  position: {right:string,left:string}
-  imageurl: string
-  children: React.ReactNode
+interface PopoverProps {
+  children: React.ReactNode,
+  image: string
 }
 
-
-const PopoverBox: React.FC<PopoverBoxProps> = ({
-  position,
-  imageurl,
-  children
+const PopoveBox: React.FC<PopoverProps> = ({
+  children,
+  image
 }) => {
-  let [isOpen, setIsOpen] = useState(true)
-
-  function closeModal() {
-    setIsOpen(false)
-  }
-
-  function openModal() {
-    setIsOpen(true)
-  }
-
-  return ( <>
-      <div className={`absolute top-1/4 left-1/4 w-[15%] h-auto aspect-[1/1]`}>
-        <div className="relative w-full h-full bg-[#C05850] rounded-full">
-        </div>
+  const [isShowing, setIsShowing] = useState(false)
+  return (
+    <Popover className="relative w-full h-full bg-[#C05850] rounded-full hover:z-50" onMouseEnter={() => setIsShowing(true)} onMouseLeave={() => setIsShowing(false)}
+    >
+      <div className={`absolute m-auto inset-0 w-5/6 h-5/6 bg-cover ${image} bg-center rounded-full`}
+      >
       </div>
-      <Transition appear show={isOpen} as={Fragment}>
-        <Dialog as="div" className="relative z-10" onClose={closeModal}>
-        <Transition.Child
-            as={Fragment}
-            enter="ease-out duration-300"
-            enterFrom="opacity-0"
-            enterTo="opacity-100"
-            leave="ease-in duration-200"
-            leaveFrom="opacity-100"
-            leaveTo="opacity-0"
-          >
-            <div className="fixed inset-0 bg-black/25" />
-          </Transition.Child>
-          <div className="fixed inset-0 overflow-y-auto">
-            <div className="flex min-h-full items-center justify-center p-4 text-center">
-              <Transition.Child
-                as={Fragment}
-                enter="ease-out duration-300"
-                enterFrom="opacity-0 scale-95"
-                enterTo="opacity-100 scale-100"
-                leave="ease-in duration-200"
-                leaveFrom="opacity-100 scale-100"
-                leaveTo="opacity-0 scale-95"
-              >
-                <Dialog.Panel className="w-full max-w-md transform overflow-hidden rounded-2xl bg-white p-6 text-left align-middle shadow-xl transition-all">
-                  {children}
-                </Dialog.Panel>
-              </Transition.Child>
-            </div>
-          </div>
-        </Dialog>
+      <Transition
+        show={isShowing}
+        enter="transition duration-100 ease-out"
+        enterFrom="transform scale-95 opacity-0"
+        enterTo="transform scale-100 opacity-100"
+        leave="transition duration-75 ease-out"
+        leaveFrom="transform scale-100 opacity-100"
+        leaveTo="transform scale-95 opacity-0"
+      >
+        <Popover.Panel
+        >
+          {children}
+        </Popover.Panel>
       </Transition>
-  </> );
+    </Popover>
+  )
 }
 
-export default PopoverBox;
+export default PopoveBox

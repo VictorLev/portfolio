@@ -5,6 +5,8 @@ import Experience from '@/components/bodysection/experience'
 import Interests from '@/components/bodysection/interests';
 import Projects from '@/components/bodysection/projects'
 import ScrollSpy from "react-ui-scrollspy";
+import Footer from '@/components/bodysection/footer';
+import Contact from '@/components/bodysection/contact';
 
 
 export default function Home() {
@@ -20,6 +22,8 @@ export default function Home() {
       <Projects id={"projects"}/>
       <Experience id={"experience"}/>
       <Interests id={"interests"}/>
+      <Contact/>
+      <Footer/>
     </ScrollSpy >
     </div>
   )

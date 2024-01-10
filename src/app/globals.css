@@ -19,7 +19,7 @@
   height: 20rem;
   background-image: url("../public/photo_profile.jpeg");
   background-size: cover;
-  box-shadow: -10vmin 10vmin 0 rgba(255,255,255,0.07);
+  box-shadow: -2vmin 1vmin 0 rgba(0,0,0,0.05);
 	animation: morph 10s linear infinite alternate;
 }
 
@@ -34,5 +34,4 @@
 
 .active-scroll-spy {
   color: #C05850;
-
 }

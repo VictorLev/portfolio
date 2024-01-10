@@ -131,14 +131,14 @@ const Interests = ({id}:InterestsProps) => {
                 </PopoveBox>
               </div>
             </div>
-            <div className="font-bold text-[#C05850] text-right text-2xl border-b-2 border-[#505668]">
+            <div className="font-bold text-[#C05850] mt-12 text-right text-2xl border-b-2 border-[#505668]">
               HOBBIES
             </div>
             <div className="font-bold text-2xl pt-2 pb-8 text-right text-[#3a353F]">
               what i do for enjoyment
             </div>
             <div className="container mx-auto">
-            <ul className="grid grid-cols-1 md:grid-cols-2 gap-6 ">
+`            <ul className="grid grid-cols-1 md:grid-cols-2 gap-6 ">
               <li className="bg-white p-6 rounded-lg shadow-md">
                 <div className="flex flex-row items-center justify-center text-[#3a353F]">
                   <div className="flex flex-col w-3/4">
@@ -175,8 +175,8 @@ const Interests = ({id}:InterestsProps) => {
                   <IconUfo size={100}/>
                 </div>
               </li>
-            </ul>
-          </div>
+            </ul>`
+            </div>
           </div>
         </div>
       </Container>

@@ -9,7 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@headlessui/react": "^1.7.17",
+    "@headlessui/react": "^0.0.0-insiders.aff438e",
     "@popperjs/core": "^2.11.8",
     "@tabler/icons-react": "^2.45.0",
     "flowbite": "^2.2.1",

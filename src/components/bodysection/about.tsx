@@ -8,8 +8,8 @@ const About = () => {
   return (
     <div className=" py-20 bg-white">
       <Container>
-        <div className="px-12 lg:grid lg:grid-cols-2 justify-center items-center gap-8">
-          <div className="relative w-full max-w-[425px] aspect-[4/3] rounded-2xl overflow-hidden">
+        <div className="px-12 grid grid-cols-1 lg:grid-cols-2 justify-center items-center gap-8">
+          <div className="relative m-auto w-full max-w-[425px] aspect-[4/3] rounded-2xl overflow-hidden">
             <Image
               src={laptop}
               alt="Picture of laptop"
@@ -17,8 +17,9 @@ const About = () => {
               style={{objectFit: "cover"}}
               sizes="(max-width:768px) 100vw , 700px"
             />
+
           </div>
-          <div className="flex flex-col">
+          <div className="flex flex-col max-w-[475px] lg:max-w-fit ">
             <div className="font-bold text-[#C05850] border-b-2 border-[#505668]">
               ABOUT ME
             </div>

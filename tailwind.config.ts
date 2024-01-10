@@ -24,7 +24,6 @@ const config: Config = {
       'korea': "url('../public/korea.jpeg')",
       'melbourne': "url('../public/melbourne.jpeg')",
       'broadback': "url('../public/Broadback.png')",
-      'bg-gradient-to-b': "linear-gradient(to bottom, var(--tw-gradient-stops));"
     }
   },
   plugins: [

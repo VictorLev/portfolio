@@ -11,7 +11,7 @@ const Contact = () => {
               CONTACT
             </div>
             <div className="font-bold text-2xl pt-2 pb-8 text-[#3a353F]">
-              Don&apos;t be shy! Hit me up! 👇
+              Don&apos;t be shy! Reach out! 👇
             </div>
           </div>
 

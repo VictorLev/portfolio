@@ -12,8 +12,8 @@ const PokaArticle = () => {
           <div className="font-bold text-[#C05850] border-b-2 border-[#505668]">
             Intergration with Poka
           </div>
-          <div className="flex flex-row p-6 gap-8 items-center">
-            <div className="text-sm text-[#797b82] text-justify font-medium w-1/2" >
+          <div className="flex flex-col-reverse lg:flex-row py-4 sm:p-6 gap-8 items-center">
+            <div className="text-sm text-[#797b82] text-justify font-medium lg:w-1/2" >
               During my tenure as a Solutions Engineer at Poka, I played a key role in leveraging technical
               expertise to support multidisciplinary teams in the development of implementation projects and
               sales pitches. This involved providing guidance on intricate technical aspects, ensuring alignment
@@ -24,7 +24,7 @@ const PokaArticle = () => {
               latest industry trends but also facilitated the integration of innovative solutions into our offerings,
               enhancing the overall competitiveness of our projects.
             </div>
-            <div className="relative w-1/2 h-auto aspect-[4/3] rounded-2xl overflow-hidden">
+            <div className="relative h-[13rem] w-full lg:w-1/2 lg:h-full overflow-hidden rounded-2xl">
               <Image
                 src={poka}
                 alt="traffic control room"
@@ -33,7 +33,7 @@ const PokaArticle = () => {
               />
             </div>
           </div>
-          <div className="px-6 text-sm text-[#797b82] text-justify font-medium w-full" >
+          <div className="sm:px-6 text-sm text-[#797b82] text-justify font-medium w-full" >
             In partnership with Professional Services, I contributed to the implementation and deployment of software solutions.
             My focus on an industrial client-centric approach ensured that our implementations were not only technically sound
             but also aligned with the specific needs and challenges of our clients.

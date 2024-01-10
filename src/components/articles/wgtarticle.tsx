@@ -12,8 +12,8 @@ const WgtArticle = () => {
           <div className="font-bold text-[#C05850] border-b-2 border-[#505668]">
             West Gate Tunnel Project
           </div>
-          <div className="flex flex-row p-6 gap-8 items-center">
-            <div className="relative w-1/2 h-auto aspect-[4/3] rounded-2xl overflow-hidden">
+          <div className="flex flex-col lg:flex-row py-4 sm:p-6 gap-8 items-center">
+            <div className="relative h-[13rem] w-full lg:w-1/2 lg:h-full overflow-hidden rounded-2xl">
               <Image
                 src={tutcr}
                 alt="traffic control room"
@@ -21,7 +21,7 @@ const WgtArticle = () => {
                 style={{objectFit: "cover"}}
               />
             </div>
-            <div className="text-sm text-[#797b82] text-justify font-medium w-1/2" >
+            <div className="text-sm text-[#797b82] text-justify font-medium lg:w-1/2" >
               During my tenure at SICE for the West Gate Tunnel (WGT) project, I played a pivotal role in
               the successful execution of various tasks related to intelligent transport systems (ITS).
               My primary responsibility involved the design of comprehensive ITS solutions, including public
@@ -34,7 +34,7 @@ const WgtArticle = () => {
               into actionable plans, ensuring seamless implementation and adherence to project standards.
             </div>
           </div>
-          <div className="px-6 text-sm text-[#797b82] text-justify font-medium w-full" >
+          <div className="sm:px-6 text-sm text-[#797b82] text-justify font-medium w-full" >
             To enhance the efficiency of hardware testing, I contributed to the development of automated test
             procedures. Leveraging Selenium Webdriver and Python, I created robust testing protocols that not
             only expedited the testing process but also ensured the reliability and functionality of the hardware components.

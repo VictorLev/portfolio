@@ -12,8 +12,8 @@ const HArticle = () => {
           <div className="font-bold text-[#C05850] border-b-2 border-[#505668]">
             Pea Protein Plant Project
           </div>
-          <div className="flex flex-row p-6 gap-8 items-center">
-            <div className="relative w-1/2 h-auto aspect-[4/3] rounded-2xl overflow-hidden">
+          <div className="flex flex-col lg:flex-row py-4 sm:p-6 gap-8 items-center">
+            <div className="relative h-[13rem] w-full lg:w-1/2 lg:h-full overflow-hidden rounded-2xl">
               <Image
                 src={hatch}
                 alt="traffic control room"
@@ -21,7 +21,7 @@ const HArticle = () => {
                 style={{objectFit: "cover"}}
               />
             </div>
-            <div className="text-sm text-[#797b82] text-justify font-medium w-3/4" >
+            <div className="text-sm text-[#797b82] text-justify font-medium lg:w-3/4" >
               During my tenure as an Electrical Engineer at Hatch, specifically on the Pea Protein Plant project,
               I played a crucial role in contributing to the successful implementation of large-scale industrial
               Networking and IT System installations. Working closely with senior engineers, I provided valuable assistance
@@ -33,7 +33,7 @@ const HArticle = () => {
               aligned with the project&apos;s requirements and industry standards.
             </div>
           </div>
-          <div className="px-6 text-sm text-[#797b82] text-justify font-medium w-full" >
+          <div className="sm:px-6 text-sm text-[#797b82] text-justify font-medium w-full" >
           Effective communication and collaboration were key components of my role, as I consistently coordinated with
           clients and stakeholders. This involved confirming project requirements and details, addressing any concerns,
           and ensuring that the implemented systems met the expectations of all stakeholders. This proactive coordination

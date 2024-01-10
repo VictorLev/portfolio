@@ -41,7 +41,7 @@ const Welcome = ({
                   <div className="text-lg text-[#3a353F] border-b-2 border-[#797b82] lg:border-b-0  font-medium lg:pr-12 lg:border-r-2 lg:border-[#797b82]">
                     Competencies
                   </div>
-                  <div className="grid grid-cols-2 gap-4 py-2 text-md my-2 text-[#797b82] text-center font-medium mb-4 sm:m-0 sm:grid-cols-4 sm:flex-row sm:gap-x-4  lg:m-auto lg:px-4  lg:justify-center lg:items-center">
+                  <div className="grid grid-cols-2 gap-4 py-2 text-md my-4 text-[#797b82] text-center font-medium sm:m-0 sm:grid-cols-4 sm:flex-row sm:gap-x-4  lg:m-auto lg:px-4  lg:justify-center lg:items-center">
                     <div>
                     Web Development
                     </div>

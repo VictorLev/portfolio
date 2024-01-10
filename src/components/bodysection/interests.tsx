@@ -138,7 +138,7 @@ const Interests = ({id}:InterestsProps) => {
               what i do for enjoyment
             </div>
             <div className="container mx-auto">
-`            <ul className="grid grid-cols-1 md:grid-cols-2 gap-6 ">
+            <ul className="grid grid-cols-1 md:grid-cols-2 gap-6 ">
               <li className="bg-white p-6 rounded-lg shadow-md">
                 <div className="flex flex-row items-center justify-center text-[#3a353F]">
                   <div className="flex flex-col w-3/4">
@@ -175,7 +175,7 @@ const Interests = ({id}:InterestsProps) => {
                   <IconUfo size={100}/>
                 </div>
               </li>
-            </ul>`
+            </ul>
             </div>
           </div>
         </div>

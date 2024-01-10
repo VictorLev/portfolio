@@ -8,7 +8,7 @@ const About = () => {
   return (
     <div className=" py-20 bg-white">
       <Container>
-        <div className="px-12 grid grid-cols-1 lg:grid-cols-2 justify-center items-center gap-8">
+        <div className="sm:px-12 grid grid-cols-1 lg:grid-cols-2 justify-center items-center gap-8">
           <div className="relative m-auto w-full max-w-[425px] aspect-[4/3] rounded-2xl overflow-hidden">
             <Image
               src={laptop}

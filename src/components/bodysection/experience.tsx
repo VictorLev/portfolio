@@ -41,18 +41,19 @@ const Experience = ({id}:ExperienceProps) => {
               <div className="font-bold text-[#C05850] text-2xl border-b-2 border-[#505668] text-right">
                 PROFESSIONAL EXPERIENCE
               </div>
-              <div className="font-bold text-2xl pt-2 pb-8 text-[#3a353F] text-right">
+              <div className="font-bold sm:text-2xl pt-2 pb-8 text-[#3a353F] text-right">
                 Impactful contributions in large-scale engineering project
               </div>
             </div>
-            <div className="grid grid-cols-3 divide-x-[1px]">
+            <div className="grid grid-cols-1 gap-6 lg:grid-cols-3 lg:divide-x-[1px]">
               { /* -- WGT project --*/ }
               <div className="flex flex-col px-6 overflow-hidden ">
-                <div className="overflow-hidden rounded" >
+                <div className="relative overflow-hidden rounded h-[13rem]" >
                   <Image
                     src={wgtunnel}
                     alt="website"
-                    width={500}
+                    fill
+                    style={{objectFit: "cover"}}
                   />
                 </div>
                 <div className="flex flex-col">

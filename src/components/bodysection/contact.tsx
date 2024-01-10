@@ -16,16 +16,13 @@ const Contact = () => {
           </div>
 
           <div className="flex flex-wrap gap-12 mt-12">
-            <div className="flex items-center gap-8">
-              <div className="flex w-[5rem] h-[5rem] text-[#3a353F] justify-center items-center rounded-full shadow-[0_3px_10px_rgb(0,0,0,0.2)]">
-                <IconMapSearch size={50}/>
-              </div>
-              <div className="flex flex-col">
-                <div className="font-bold text-xl text-[#3a353F]">Location</div>
-                <div className="font-medium text-md text-[#797b82] ">Melbourne CBD, VIC</div>
-              </div>
+            <div className="flex w-[5rem] h-[5rem] text-[#3a353F] justify-center items-center rounded-full shadow-[0_3px_10px_rgb(0,0,0,0.2)]">
+              <IconMapSearch size={50}/>
             </div>
-            <div className="flex items-center gap-8">
+            <div className="flex flex-col">
+              <div className="font-bold text-xl text-[#3a353F]">Location</div>
+              <div className="font-medium text-md text-[#797b82] ">Melbourne CBD, VIC</div>
+            </div>
             <div className="flex w-[5rem] h-[5rem] text-[#3a353F] justify-center items-center rounded-full shadow-[0_3px_10px_rgb(0,0,0,0.2)]">
                 <IconMail size={50}/>
               </div>
@@ -33,8 +30,6 @@ const Contact = () => {
                 <div className="font-bold text-xl text-[#3a353F]">Mail</div>
                 <a className="font-medium text-md text-[#797b82] hover:text-[#e89e99] transition-all" href="mailto:levesque.vic@gmail.com">levesque.vic@gmail.com</a>
               </div>
-
-            </div>
           </div>
 
 

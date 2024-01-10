@@ -14,7 +14,7 @@ const Projects = ({id}:ProjectsProps) => {
   return (
     <div id={id} className=" py-24 ">
       <Container>
-        <div className="w-full px-12 justify-center items-center gap-8">
+        <div className="w-full justify-center items-center gap-8">
           <div className="flex flex-col">
             <div className="font-bold text-[#C05850] text-2xl border-b-2 border-[#505668]">
               PORTFOLIO PROJECTS
@@ -23,20 +23,20 @@ const Projects = ({id}:ProjectsProps) => {
               Each project is a unique piece of development
             </div>
             { /* -- PORTFOLIO PROJECTS --*/ }
-            <div className="grid grid-cols-1 gap-20 w-full ">
+            <div className="grid grid-cols-1 gap-20 w-full h-auto">
               { /* -- E-COMM STORE --*/ }
-              <div className="flex flex-col p-6 items-center mx-auto max-w-[500px] lg:max-w-full lg:flex-row lg:h-[25rem] overflow-hidden rounded-2xl shadow-lg bg-white ">
-                <div className="overflow-hidden rounded-2xl shadow-lg max-w-[500px] aspect-[4/3] h-full" >
+              <div className="flex flex-col p-6 mx-auto gap-8 h-[45rem] w-fit lg:flex-row lg:gap-16 lg:h-[26rem] lg:w-full overflow-hidden rounded-2xl shadow-lg bg-white">
+                <div className="w-full sm:w-[34rem] h-auto overflow-hidden rounded-2xl shadow-lg" >
                   <a target="_blank" href="https://qcecomm-store.vercel.app/en" rel="noreferrer">
                       <Image
                         src={qcstore}
                         alt="website"
-                        width={500}
+                        width={544}
                         className="transition duration-[5000ms] hover:translate-y-[-47%]"
                       />
                   </a>
                 </div>
-                <div className="flex flex-col h-full justify-center max-w-xl items-center px-12 lg:w-1/2 lg:mx-0">
+                <div className="flex flex-col h-auto items-center justify-center mx-auto w-[18rem]">
                   <div className="font-bold text-lg text-[#3a353F] my-4">E-commerce (Decembre 2023)</div>
                   <div className="text-[#797b82] font-medium text-center mb-2">A seamless online shopping experience for Quebecer customers in Australia offering a wide range of products. The full-stack website supports multiple languages, a shopping cart, Stripe and more.</div>
                   <div className="flex flex-row gap-4 justify-center">
@@ -70,22 +70,22 @@ const Projects = ({id}:ProjectsProps) => {
                   </div>
                 </div>
               </div>
+
               { /* -- Restaurant Search Engine --*/ }
-              <div className="flex flex-col p-6 items-center mx-auto max-w-[500px] lg:max-w-full lg:flex-row-reverse lg:h-[25rem] overflow-hidden rounded-2xl shadow-lg bg-white ">
-                <div className="overflow-hidden rounded-2xl max-w-[500px] aspect-[4/3] h-full" >
+              <div className="flex flex-col p-6 mx-auto gap-8 h-[45rem] w-fit lg:flex-row-reverse lg:gap-16 lg:h-[26rem] lg:w-full overflow-hidden rounded-2xl shadow-lg bg-white">
+                <div className="w-full sm:w-[34rem] h-auto overflow-hidden rounded-2xl shadow-lg" >
                   <a target="_blank" href="" rel="noreferrer">
                       <Image
                         src={wip}
                         alt="wip"
-                        width={500}
-                        style={{objectFit: "cover"}}
+                        width={544}
                       />
                   </a>
                 </div>
-                <div className="flex flex-col h-full justify-center max-w-xl items-center px-12 lg:w-1/2 lg:mx-0">
+                <div className="flex flex-col h-auto items-center justify-center mx-auto w-[18rem]">
                   <div className="font-bold text-lg text-[#3a353F] mb-4 text-center">Restaurant Search Engine (Feb 2024)</div>
                   <div className="text-[#797b82] font-medium text-center mb-2">Innovative matchmaking Restaurant Search Engine to make perfect pairings! Elevate your dining experience by discovering restaurants tailored to your unique preferences and cravings. </div>
-                  {/*
+
                   <div className="flex flex-row gap-4 justify-center">
                     <div className="flex flex-row p-2 items-center">
                       <div className="font-semibold text-[#3a353F]">Nextjs</div>
@@ -115,24 +115,24 @@ const Projects = ({id}:ProjectsProps) => {
                         </div>
                       </a>
                   </div>
-                  */}
+
                 </div>
 
               </div>
 
-              { /* -- Portfolio
-              <div className="flex flex-row-reverse p-6 h-[25rem] gap-20 overflow-hidden rounded-2xl shadow-lg bg-white ">
-                <div className="overflow-hidden rounded-2xl shadow-lg h-full " >
+              { /* -- Portfolio--*/ }
+              <div className="flex flex-col p-6 mx-auto gap-8 h-[45rem] w-fit lg:flex-row lg:gap-16 lg:h-[26rem] lg:w-full overflow-hidden rounded-2xl shadow-lg bg-white">
+                <div className="w-full sm:w-[34rem] h-auto overflow-hidden rounded-2xl shadow-lg" >
                   <a target="_blank" href="https://qcecomm-store.vercel.app/en" rel="noreferrer">
                       <Image
                         src={portfolio}
                         alt="website"
-                        width={500}
+                        width={544}
                         className="transition duration-[5000ms] hover:translate-y-[-50%]"
                       />
                   </a>
                 </div>
-                <div className="flex flex-col h-full justify-center items-center w-[18rem]">
+                <div className="flex flex-col h-auto items-center justify-center mx-auto w-[18rem]">
                   <div className="font-bold text-lg text-[#3a353F] mb-4">Portfolio (January 2023)</div>
                   <div className="text-[#797b82] font-medium text-center mb-2">This simple yet elegant portfolio showcases my front-end capabilities with modern technologies and a focus on clarity, responsiveness and clean design.</div>
                   <div className="flex flex-row gap-4 justify-center">
@@ -156,10 +156,7 @@ const Projects = ({id}:ProjectsProps) => {
                       </a>
                   </div>
                 </div>
-
-              </div>--*/ }
-
-
+              </div>
             </div>
           </div>
         </div>

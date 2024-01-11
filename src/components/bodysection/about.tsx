@@ -27,9 +27,9 @@ const About = () => {
               A committed software engineer, driven by a love for coding and problem-solving
             </div>
             <div className="text-sm text-[#797b82] text-justify pr-2 font-medium">
-            As a seasoned engineer in various industries, I bring a versatile skill set. In web development, I excel in creating user-centric websites, proficiently utilizing frameworks like React and Nextjs.
-            My expertise extends to electronic engineering and telecommunications, where I have designed and implemented robust and scalable industrial systems.
-            With a keen eye for detail and a structured approach with a focus on customer service, I have successfully managed projects from conception to completion, showcasing my customer-facing project management prowess. Moreover, my strong communication skills and collaborative mindset have fostered positive teamwork dynamics.
+            As a seasoned engineer in various industries, I bring a versatile skill set. In web development, I excel in creating user-centric websites, proficiently utilizing modern frameworks like React and Nextjs.
+            My expertise extends to electronic and telecom engineering, where I have designed and implemented robust and scalable industrial IT systems.
+            With a keen eye for detail and a structured approach focused on customer needs, I have successfully managed projects from conception to completion, showcasing my project management prowess. Moreover, my strong communication skills and collaborative mindset have fostered positive teamwork dynamics.
             </div>
           </div>
         </div>

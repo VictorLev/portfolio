@@ -14,9 +14,8 @@ export default function Home() {
     <div className="bg-[#F1ECE1]">
     <ScrollSpy
       scrollThrottle={100}
-      useBoxMethod
-      offsetBottom={30}
-      offsetTop={30}
+      offsetBottom={20}
+      offsetTop={20}
     >
       <Welcome id={"home"}/>
       <Projects id={"projects"}/>

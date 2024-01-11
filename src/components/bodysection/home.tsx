@@ -22,7 +22,7 @@ const Welcome = ({
                     Software engineer
                   </div>
                   <div className="text-lg text-[#797b82] font-medium text-center justify-center px-8 lg:p-0 lg:pr-8 lg:justify-normal lg:text-left">
-                    Hi, I&apos;m Victor Levesque. An Electronic Engineer by training and Software Engineer by passion based in Melbourne. 🇦🇺
+                    Hi, I&apos;m Victor Levesque. Electronic engineer by training and software engineer by passion based in Melbourne. 🇦🇺
                   </div>
                   <div className="flex mx-4 my-8 gap-4 justify-center lg:justify-normal">
                     <a className="text-[#3a353F] hover:text-[#e89e99] transition-all" href="https://www.linkedin.com/in/victor-l%C3%A9vesque-p-eng/" target="_blank" rel="noreferrer noopener">
@@ -49,7 +49,7 @@ const Welcome = ({
                       Project Management
                     </div>
                     <div>
-                      Customer service
+                      Client relations
                     </div>
                     <div>
                       Communication and Teamwork

@@ -1,10 +1,7 @@
 "use client"
 
-import { IconMail, IconMenu2 } from "@tabler/icons-react";
+import { IconMail } from "@tabler/icons-react";
 import MobileNavBar from "../ui/mobile-navbar";
-import { Dialog } from "@headlessui/react";
-import { IconX } from "@tabler/icons-react";
-import { useState } from "react";
 
 const Navbar = () => {
 

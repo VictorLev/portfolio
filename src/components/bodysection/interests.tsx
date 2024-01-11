@@ -35,7 +35,7 @@ const Interests = ({id}:InterestsProps) => {
               />
               <div className="absolute top-1/4 left-1/4 w-[15%] h-auto aspect-[1/1]">
                 <PopoveBox image={"bg-canoe"}> {/*fixed inset-x-0 h-screen top-0 w-screen overflow-y-auto z-30*/}
-                  <div className="fixed inset-8 w-auto h-1/2 m-4 lg:absolute lg:-right-[39rem] lg:-top-[10rem] h-auto lg:w-[35rem] rounded-lg bg-white overflow-y-scroll"
+                  <div className="fixed inset-8 w-auto h-1/2 m-4 lg:inset-auto lg:absolute lg:-right-[39rem] lg:-top-[10rem] lg:h-[38rem] lg:w-[36rem] rounded-lg bg-white overflow-y-scroll"
                   >
                     <div className="m-4">
                       <div className="font-bold text-[#3a353F] text-2xl border-b-2 border-[#505668]">
@@ -60,7 +60,7 @@ const Interests = ({id}:InterestsProps) => {
               </div>
               <div className="absolute top-1/2 left-[40%] w-[15%] h-auto aspect-[1/1]">
                 <PopoveBox image={"bg-ghana"}>
-                  <div className="fixed inset-8 w-auto h-1/2 m-4 lg:absolute lg:-right-[34rem] lg:-top-[10rem] lg:h-[31rem] lg:w-[30rem] rounded-lg bg-white overflow-y-scroll"
+                  <div className="fixed inset-8 w-auto h-1/2 m-4 lg:inset-auto lg:absolute lg:-right-[33rem] lg:-top-[10rem] lg:h-[32rem] lg:w-[30rem] rounded-lg bg-white overflow-y-scroll"
                   >
                   <div className="m-4">
                     <div className="font-bold text-[#3a353F] text-2xl border-b-2 border-[#505668]">
@@ -82,7 +82,7 @@ const Interests = ({id}:InterestsProps) => {
               </div>
               <div className="absolute top-1/4 left-[75%] w-[15%] h-auto aspect-[1/1]">
                 <PopoveBox image={"bg-korea"}>
-                  <div className="fixed inset-8 w-auto h-1/2 m-4 lg:absolute lg:-left-[41rem] lg:-top-[10rem]  lg:h-[30rem] lg:w-[40rem] rounded-lg bg-white overflow-y-scroll"
+                  <div className="fixed inset-8 w-auto h-1/2 m-4 lg:inset-auto lg:absolute lg:-left-[41rem] lg:-top-[10rem]  lg:h-[31rem] lg:w-[40rem] rounded-lg bg-white overflow-y-scroll"
                   >
                     <div className="m-4">
                       <div className="font-bold text-[#3a353F] text-2xl border-b-2 border-[#505668]">
@@ -109,7 +109,7 @@ const Interests = ({id}:InterestsProps) => {
               </div>
               <div className="absolute top-2/3 left-[80%] w-[15%] h-auto aspect-[1/1]">
                 <PopoveBox image={"bg-melbourne"}>
-                  <div className="fixed inset-8 w-auto h-1/2 m-4 lg:absolute lg:-left-[41rem] lg:-top-[20rem]  lg:h-[34rem] lg:w-[40rem] bg-white rounded-lg overflow-y-scroll"
+                  <div className="fixed inset-8 w-auto h-1/2 m-4 lg:inset-auto lg:absolute lg:-left-[41rem] lg:-top-[20rem]  lg:h-[34rem] lg:w-[40rem] bg-white rounded-lg overflow-y-scroll"
                   >
                     <div className="m-4">
                       <div className="font-bold text-[#3a353F] text-2xl border-b-2 border-[#505668]">

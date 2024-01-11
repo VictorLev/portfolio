@@ -19,7 +19,7 @@ const Interests = ({id}:InterestsProps) => {
   return (
     <div id={id} className=" py-24 ">
       <Container>
-        <div className="w-full px-12 justify-center items-center gap-8">
+        <div className="w-full sm:px-12 justify-center items-center gap-8">
           <div className="flex flex-col">
             <div className="font-bold text-[#C05850] text-2xl border-b-2 border-[#505668]">
               PERSONAL INTERESTS
@@ -27,14 +27,15 @@ const Interests = ({id}:InterestsProps) => {
             <div className="font-bold text-2xl pt-2 pb-8 text-[#3a353F]">
               Life changing experiences that I&apos;m proud to share
             </div>
+            {/*-- World Mapr --*/}
             <div className="relative w-full h-auto">
               <Image
                 src={worldmap}
                 alt="worldmap"
               />
               <div className="absolute top-1/4 left-1/4 w-[15%] h-auto aspect-[1/1]">
-                <PopoveBox image={"bg-canoe"}>
-                  <div className="absolute -right-[41rem] -top-[10rem] bg-white h-[26rem] w-[40rem] rounded-lg"
+                <PopoveBox image={"bg-canoe"}> {/*fixed inset-x-0 h-screen top-0 w-screen overflow-y-auto z-30*/}
+                  <div className="fixed inset-8 w-auto h-1/2 m-4 lg:absolute lg:-right-[39rem] lg:-top-[10rem] h-auto lg:w-[35rem] rounded-lg bg-white overflow-y-scroll"
                   >
                     <div className="m-4">
                       <div className="font-bold text-[#3a353F] text-2xl border-b-2 border-[#505668]">
@@ -43,14 +44,14 @@ const Interests = ({id}:InterestsProps) => {
                       <div className="font-bold text-xl pt-2 pb-4 text-[#3a353F]">
                         450 km, 40 Days of canoe adventure
                       </div>
-                      <div className="flex flex-row px-6 gap-8 items-center">
-                        <div className="relative w-1/2 h-auto aspect-[4/3] bg-cover bg-[url('../public/Broadback.png')] bg-center rounded overflow-hidden">
+                      <div className="flex flex-col sm:p-6 sm:px-6 gap-8 items-center">
+                        <div className="relative h-[13rem] w-full lg:h-[10rem] bg-cover bg-center bg-[url('../public/Broadback.png')] rounded overflow-hidden">
                         </div>
-                        <div className="text-sm text-[#797b82] text-justify font-medium w-3/4" >
+                        <div className="text-sm text-[#797b82] text-justify font-medium" >
                           A 40-day canoe camping adventure on the Broadback River promised an immersive and challenging experience in the heart of nature.The daily routine involved cooking meals over open fires, purifying water from the river, and enjoying the simplicity of life in the wild. Nights were spent under the stars, surrounded by the soothing sounds of nature.
                         </div>
                       </div>
-                      <div className="my-4 px-6 text-sm text-[#797b82] text-justify font-medium " >
+                      <div className="my-4 sm:px-6 text-sm text-[#797b82] text-justify font-medium " >
                       The adventure was not without its challenges; the crew encountered harsh weather conditions, varying river currents, and wildlife encounters. However, these obstacles contribute to the overall sense of accomplishment and connection with the natural environment.
                       </div>
                     </div>
@@ -59,7 +60,7 @@ const Interests = ({id}:InterestsProps) => {
               </div>
               <div className="absolute top-1/2 left-[40%] w-[15%] h-auto aspect-[1/1]">
                 <PopoveBox image={"bg-ghana"}>
-                  <div className="absolute -right-[31rem] -top-[10rem] bg-white h-[31rem] w-[30rem] rounded-lg"
+                  <div className="fixed inset-8 w-auto h-1/2 m-4 lg:absolute lg:-right-[34rem] lg:-top-[10rem] lg:h-[31rem] lg:w-[30rem] rounded-lg bg-white overflow-y-scroll"
                   >
                   <div className="m-4">
                     <div className="font-bold text-[#3a353F] text-2xl border-b-2 border-[#505668]">
@@ -69,7 +70,7 @@ const Interests = ({id}:InterestsProps) => {
                       Teaching essential IT and computer skills to children in Cape coast, Ghana.
                     </div>
                     <div className="flex flex-col items-center justify-center">
-                    <iframe width="400" height="230" src="https://www.youtube.com/embed/w_uxyCgd-vM?si=jHyme3aRWAvZO-_W" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
+                    <iframe className="w-full" height="230" src="https://www.youtube.com/embed/w_uxyCgd-vM?si=jHyme3aRWAvZO-_W" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
                       <div className="my-4 px-6 text-sm text-[#797b82] text-justify font-medium " >
                         Just like children throughout the world, Ghanaian children are fascinated by computers and eager to learn how to use them. Teaching such a useful skill is invaluable, both to individuals and the communities they live in.
                       </div>
@@ -81,7 +82,7 @@ const Interests = ({id}:InterestsProps) => {
               </div>
               <div className="absolute top-1/4 left-[75%] w-[15%] h-auto aspect-[1/1]">
                 <PopoveBox image={"bg-korea"}>
-                  <div className="absolute -left-[41rem] -top-[10rem] bg-white h-[30rem] w-[40rem] rounded-lg"
+                  <div className="fixed inset-8 w-auto h-1/2 m-4 lg:absolute lg:-left-[41rem] lg:-top-[10rem]  lg:h-[30rem] lg:w-[40rem] rounded-lg bg-white overflow-y-scroll"
                   >
                     <div className="m-4">
                       <div className="font-bold text-[#3a353F] text-2xl border-b-2 border-[#505668]">
@@ -90,14 +91,14 @@ const Interests = ({id}:InterestsProps) => {
                       <div className="font-bold text-xl pt-2 pb-4 text-[#3a353F]">
                         living in a rich culture
                       </div>
-                      <div className="flex flex-row px-6 gap-8 items-center">
-                        <div className="text-sm text-[#797b82] text-justify font-medium w-3/4" >
+                      <div className="flex flex-row lg:px-6 gap-8 items-center">
+                        <div className="text-sm text-[#797b82] text-justify font-medium lg:w-3/4" >
                         My 8-month student exchange in Korea was nothing short of amazing – a whirlwind of adventure, cultural immersion, and personal growth. From the moment I set foot in the country, I was captivated by the vibrant energy and warmth of the Korean people.
                         </div>
-                        <div className="relative w-1/2 h-auto aspect-[4/3] bg-cover bg-[url('../public/koreafriends.jpeg')] bg-center rounded overflow-hidden">
+                        <div className="hidden lg:block relative w-1/2 h-auto aspect-[4/3] bg-cover bg-[url('../public/koreafriends.jpeg')] bg-center rounded overflow-hidden">
                         </div>
                       </div>
-                      <div className="my-4 px-6 text-sm text-[#797b82] text-justify font-medium " >
+                      <div className="my-4 lg:px-6 text-sm text-[#797b82] text-justify font-medium " >
                       The academic side of the exchange was an eye-opener. I got to experience firsthand the Korean education system, and it was fascinating to see the different teaching methods and approaches. It challenged me academically, broadening my horizons and providing me with a unique perspective on my field of study.
                       <br/>
                       I explored ancient palaces and temples, savored authentic Korean cuisine, and even participated in traditional tea ceremonies. The language barrier initially posed a challenge, but as I navigated daily life, my language skills improved, opening up even more doors to connect with the local community.
@@ -108,7 +109,7 @@ const Interests = ({id}:InterestsProps) => {
               </div>
               <div className="absolute top-2/3 left-[80%] w-[15%] h-auto aspect-[1/1]">
                 <PopoveBox image={"bg-melbourne"}>
-                  <div className="absolute -left-[41rem] -top-[20rem] bg-white h-[32rem] w-[40rem] rounded-lg"
+                  <div className="fixed inset-8 w-auto h-1/2 m-4 lg:absolute lg:-left-[41rem] lg:-top-[20rem]  lg:h-[34rem] lg:w-[40rem] bg-white rounded-lg overflow-y-scroll"
                   >
                     <div className="m-4">
                       <div className="font-bold text-[#3a353F] text-2xl border-b-2 border-[#505668]">
@@ -117,10 +118,14 @@ const Interests = ({id}:InterestsProps) => {
                       <div className="font-bold text-xl pt-2 pb-2 text-[#3a353F]">
                         the major life shift
                       </div>
-                      <div className="px-6 text-sm text-[#797b82] text-justify font-medium " >
+                      <div className="flex flex-row sm:px-6 gap-8 items-center">
+                        <div className="text-sm text-[#797b82] text-justify font-medium lg:w-3/4" >
                         Moving from Montreal to Melbourne was an event that brought a whirlwind of emotions and experiences. The decision to relocate to the other side of the globe wasn&apos;t made lightly, but from the moment I stepped onto that plane, I knew I was embarking on a thrilling adventure.
-                        The first thing that struck me was the sheer distance. The long-haul flight felt like a journey through time zones, cultures, and climates.
-                        <br/><br/>
+                        </div>
+                        <div className="hidden lg:block relative w-1/2 h-auto aspect-[4/3] bg-contain bg-[url('../public/moving.jpeg')] bg-center rounded overflow-hidden">
+                        </div>
+                      </div>
+                      <div className="sm:px-6 text-sm text-[#797b82] text-justify font-medium" >
                         Settling into Melbourne wasn&apos;t just about adapting to a different city – it was about acclimating to an entirely new way of life. The Aussie culture, with its laid-back vibe and friendliness, quickly made me feel welcome.
                         Of course, there were challenges. Navigating the nuances of Aussie slang, understanding the public transportation system, and adjusting to the reversed seasons were all part of the learning curve. Yet, each challenge was an opportunity for growth and a chance to embrace the unfamiliar.
                         <br/><br/>
@@ -131,6 +136,7 @@ const Interests = ({id}:InterestsProps) => {
                 </PopoveBox>
               </div>
             </div>
+            {/*-- Hobbies --*/}
             <div className="font-bold text-[#C05850] mt-12 text-right text-2xl border-b-2 border-[#505668]">
               HOBBIES
             </div>

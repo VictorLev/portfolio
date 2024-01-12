@@ -84,8 +84,8 @@ const Projects = ({id}:ProjectsProps) => {
                   </a>
                 </div>
                 <div className="flex flex-col h-auto items-center justify-center mx-auto w-[18rem]">
-                  <div className="font-bold text-lg text-[#3a353F] mb-4 text-center">Admin Panel/CMS (Feb 2024)</div>
-                  <div className="text-[#797b82] font-medium text-center mb-2">As a separate website for E-commerce Project, this back-end admin panel manages settings and views relevant data and other functionalities. This project utilized Clerk for user management, Prisma as MySQL database, and more. </div>
+                  <div className="font-bold text-lg text-[#3a353F] mb-4 text-center">Admin Panel/CMS (Jan 2024)</div>
+                  <div className="text-[#797b82] font-medium text-center mb-2">Connected to the E-commerce Project, this back-end CMS website manages content, orders, settings, dashboards and other functionalities. This project utilized Clerk for user management, Prisma as MySQL database, and more. </div>
 
                   <div className="flex flex-row gap-4 justify-center">
                     <div className="flex flex-row p-2 items-center">

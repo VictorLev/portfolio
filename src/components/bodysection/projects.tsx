@@ -183,7 +183,7 @@ const Projects = ({id}:ProjectsProps) => {
                   </a>
                 </div>
                 <div className="flex flex-col h-auto items-center justify-center mx-auto w-[18rem]">
-                  <div className="font-bold text-lg text-[#3a353F] mb-4">Portfolio (January 2023)</div>
+                  <div className="font-bold text-lg text-[#3a353F] mb-4">Portfolio (January 2024)</div>
                   <div className="text-[#797b82] font-medium text-center mb-2">This simple yet elegant portfolio showcases my front-end capabilities with modern technologies and a focus on clarity, responsiveness and clean design.</div>
                   <div className="flex flex-row gap-4 justify-center">
                     <div className="flex flex-row p-2 items-center">

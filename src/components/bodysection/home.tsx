@@ -43,7 +43,7 @@ const Welcome = ({
                   </div>
                   <div className="grid grid-cols-2 gap-4 py-2 text-md my-4 text-[#797b82] text-center font-medium sm:m-0 sm:grid-cols-4 sm:flex-row sm:gap-x-4  lg:m-auto lg:px-4  lg:justify-center lg:items-center">
                     <div>
-                      Web Development
+                      Software Development
                     </div>
                     <div>
                       Project Management

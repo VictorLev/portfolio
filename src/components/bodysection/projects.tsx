@@ -39,7 +39,7 @@ const Projects = ({id}:ProjectsProps) => {
               </div>
               <div className="flex flex-col h-auto items-center justify-center mx-auto w-[18rem]">
                 <div className="font-bold text-lg text-[#3a353F] mb-4">AllDayHikers (February 2024)</div>
-                <div className="text-[#797b82] font-medium text-center mb-2">A nature e-commerce front-end project. This project showcases my front-end creativity with tailCSS to make it modern and realistic.</div>
+                <div className="text-[#797b82] font-medium text-center mb-2">A nature e-commerce front-end project. This project showcases my front-end creativity with tailwindCSS to make it modern and realistic.</div>
                 <div className="flex flex-row gap-4 justify-center">
                   <div className="flex flex-row p-2 items-center">
                     <div className="font-semibold text-[#3a353F]">Tailwind</div>

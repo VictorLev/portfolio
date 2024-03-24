@@ -3,9 +3,10 @@ import Container from "@/components/ui/container";
 import qcstore from "@/public/qcecomm-store.jpg"
 import AllDayHikers from "@/public/all-day-hikers.jpg"
 import wip from "@/public/WIP.jpeg"
+import tripquest from "@/public/tripquest.png"
 import AdminPanel from "@/public/AdminPanel.gif"
 import { IconBrandGithub,IconBrandNextjs,IconBrandPrisma,IconExternalLink,
-  IconBrandTailwind, IconBrandReact } from '@tabler/icons-react';
+  IconBrandTailwind, IconBrandReact, IconDiamond } from '@tabler/icons-react';
 
 interface ProjectsProps {
   id: string;
@@ -25,6 +26,48 @@ const Projects = ({id}:ProjectsProps) => {
             </div>
             { /* -- PORTFOLIO PROJECTS --*/ }
             <div className="grid grid-cols-1 gap-20 w-full h-auto">
+            { /* -- TripQuest--*/ }
+            <div className="flex flex-col p-6 mx-auto gap-8 h-[45rem] w-fit lg:flex-row-reverse lg:gap-16 lg:h-[25rem] lg:w-full overflow-hidden rounded-2xl shadow-lg bg-white">
+              <div className="w-full sm:w-[34rem] h-auto overflow-hidden rounded-2xl shadow-lg" >
+                <a target="_blank" href="https://young-caverns-55583-914b182a4d8b.herokuapp.com/" rel="noreferrer">
+                    <Image
+                      src={tripquest}
+                      alt="website"
+                      width={544}
+                    />
+                </a>
+              </div>
+              <div className="flex flex-col h-auto items-center justify-center mx-auto w-[18rem]">
+                <div className="font-bold text-lg text-[#3a353F] mb-4">TripQuest (March 2024)</div>
+                <div className="text-[#797b82] font-medium text-center mb-2">Full-stack web development project. A clean, intuitive design that displays a dashboard of the user’s driving statistics, rewards, and tips for safer driving.
+
+                 </div>
+                <div className="flex flex-row gap-4 justify-center">
+                  <div className="flex flex-row p-2 items-center">
+                    <div className="font-semibold text-[#3a353F]">Ruby</div>
+                    <IconDiamond color="#3a353F" size={24}/>
+                  </div>
+                </div>
+                <div className="flex justify-between w-full mt-4 p-2 items-center">
+                  <a className="text-[#3a353F] hover:text-[#e89e99] transition-all" target="_blank" href="https://github.com/VictorLev/trip-quest" rel="noreferrer">
+                      <div className="flex flex-row items-center rounded bg-white shadow p-1">
+                        <div className="font-semibold px-1">
+                          Code
+                        </div>
+                        <IconBrandGithub size={36}/>
+                      </div>
+                    </a>
+                    <a className="text-[#3a353F] hover:text-[#e89e99] transition-all" target="_blank" href="https://young-caverns-55583-914b182a4d8b.herokuapp.com/" rel="noreferrer">
+                      <div className="flex flex-row items-center rounded bg-white shadow p-1">
+                        <div className="font-semibold px-1">
+                        Live Demo
+                        </div>
+                        <IconExternalLink  size={36}/>
+                      </div>
+                    </a>
+                </div>
+              </div>
+            </div>
             { /* -- AllDayHikers--*/ }
             <div className="flex flex-col p-6 mx-auto gap-8 h-[45rem] w-fit lg:flex-row lg:gap-16 lg:h-[26rem] lg:w-full overflow-hidden rounded-2xl shadow-lg bg-white">
               <div className="w-full sm:w-[34rem] h-auto overflow-hidden rounded-2xl shadow-lg" >

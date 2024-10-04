@@ -7,8 +7,8 @@ import ArticleProvider from '@/providers/article-provider'
 const montserrat = Montserrat({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Victor Levesque | Software Engineer',
-  description: 'this is web portfolio of Victor Levesque software engineer',
+  title: 'Victor Levesque | Cloud Engineer',
+  description: 'this is web portfolio of Victor Levesque cloud engineer',
 }
 
 export default function RootLayout({

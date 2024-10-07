@@ -22,7 +22,7 @@ const Welcome = ({
                     DevOps engineer
                   </div>
                   <div className="text-lg text-[#797b82] font-medium text-center justify-center px-8 lg:p-0 lg:pr-8 lg:justify-normal lg:text-left">
-                    Hi👋, i'm Victor Levesque. Passionate about optimizing cloud solutions and building scalable, high-performance environments.
+                    Hi👋, I&apos;m Victor Levesque. Passionate about optimizing cloud solutions and building scalable, high-performance environments.
                   </div>
                   <div className="flex mx-4 my-8 gap-4 justify-center lg:justify-normal">
                     <a className="text-[#3a353F] hover:text-[#e89e99] transition-all" href="https://www.linkedin.com/in/victor-l%C3%A9vesque-p-eng/" target="_blank" rel="noreferrer noopener">
